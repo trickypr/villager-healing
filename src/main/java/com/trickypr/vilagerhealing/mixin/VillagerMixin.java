@@ -28,6 +28,9 @@ public abstract class VillagerMixin extends MerchantEntity
 
     if (villager.isDead())
       return;
+    if (villager.getHealth() >= villager.getMaxHealth())
+      return;
+
     if (accessor.getFoodLevel() + accessor.invokeGetAvailableFood() <= 4)
       return;
     if (accessor.getFoodLevel() < 4)
