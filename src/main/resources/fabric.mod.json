@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "villager-healing",
+  "version": "${version}",
+  "name": "Villager Healing",
+  "description": "Villagers heal half a heart when they have plenty of food and sleep in a bed",
+  "authors": ["TrickyPR"],
+  "contact": {
+    "sources": "https://github.com/trickypr/villager-healing"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/villager-healing/icon.png",
+  "environment": "server",
+  "mixins": ["villager-healing.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "minecraft": "~1.19.3",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
